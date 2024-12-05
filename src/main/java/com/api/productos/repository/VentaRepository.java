@@ -1,4 +1,7 @@
 package com.api.productos.repository;
 
-public interface VentaRepository {
+import com.api.productos.model.VentaModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface VentaRepository extends JpaRepository<VentaModel, Integer> {
 }

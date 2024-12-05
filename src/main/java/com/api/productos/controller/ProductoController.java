@@ -19,7 +19,7 @@ public class ProductoController {
         return productoService.getAllProductos();
     }
 
-    @PostMapping
+    @PostMapping("/crear")
     public ProductoModel saveProducto(@RequestBody ProductoModel producto) {
         return productoService.saveProducto(producto);
     }
